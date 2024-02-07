@@ -1,4 +1,4 @@
-const API_KEY = " bd1b7fb0f6ea455b937627ec1e1f4586";
+const API_KEY = "bd1b7fb0f6ea455b937627ec1e1f4586";
 const recipeListEl = document.getElementById("recipe-list");
 
 function displayRecipes(recipes) {
@@ -30,3 +30,20 @@ function displayRecipes(recipes) {
     recipeItemEl.appendChild(recipeLinkEl);
     recipeListEl.appendChild(recipeItemEl);
   });
+}
+
+async function getRecipes() {
+  const response = await fetch(
+    `https://api.spoonacular.com/recipes/random?number=10&apiKey=${API_KEY}`
+  );
+  const data = await response.json();
+
+  return data.recipes;
+}
+
+async function init() {
+  const recipes = await getRecipes();
+  displayRecipes(recipes);
+}
+
+init();

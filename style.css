@@ -36,3 +36,18 @@ h1 {
   height: 150px;
   object-fit: cover;
 }
+.recipe-item h2 {
+  font-size: 20px;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.recipe-item p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.recipe-item a {
+  width: 100%;
+  text-align: center;
+}

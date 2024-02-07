@@ -24,3 +24,15 @@ h1 {
   margin: 0;
   padding: 0;
 }
+.recipe-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgb(30, 14, 14);
+}
+.recipe-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}

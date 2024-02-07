@@ -5,6 +5,8 @@ body {
 }
 header {
   background-color: burlywood;
+  background-image: url(C:\Users\jamal\Recipe-Book\recipe.jpg);
+
   color: black;
   padding: 20px;
   text-align: center;
